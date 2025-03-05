@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel = "stylesheet" href = "styles.css">
+    <title>WELCOME TO TIC TAC TOE</title>
+</head>
+<body class="bg-secondary">
+    <p>
+<!-- 
+        <!-- //PIC above title -->
+        <div id="header" class="container text-center p-2">
+            <div class="row">
+                <div class="col pt-3"></div>
+                <div class="col pt-5">
+                    <img src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU" width="362">
+                </div>
+                <div class="col pt-3"></div>
+
+            </div>
+            
+
+<!-- 
+            //GAME TITLE AND PLAYERS -->
+            <div class="row pt-5"></div>
+             <div class="col">
+                <h1 class="m-5"> TIC TAC TOE GAME</h1>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div id='1player' class="col fs-1">PLAYER 1 -X </div>
+                <div class="col fs-2"></div>
+                <div id= '2player'class  ="col fs-1">PLAYER 2 - O </div>
+            </div>
+
+        </div>
+<!-- GAME NOTIFICATION pop ups for game play status -->
+ <div id= "alert--container" class="container">
+        <div id="alertStart" class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert">
+            PLAYER 1's Opening Turn
+        </div>
+        
+        <div id="alertWinner" class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert">
+            WINNER, WINNER, Chicken Dinner!!
+        </div>
+        
+        <div id= "alertTie" class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert">
+           Sorry, TIE BALL GAME!!
+        </div>
+    </div>
+
+
+<!-- BUILDING THE BOARD -->
+        <div class="container m-auto p-3 g-5">
+
+            <div id="grid" class="container-outline-light m-auto p-0 bg-light text-info text-center align-middle border border-info"></div>
+
+                <div class="row fs-1 g-0">
+                        <div id="box1" class="box col p-3 border border-info"></div>
+                        <div id="box2" class="box col p-3 border border-info"></div>
+                        <div id="box3" class="box col p-3 border border-info"></div>
+                </div>
+
+                <div class="row fs-1 g-0">
+                    <div id="box4" class="box col p-3 border border-info"></div>
+                    <div id="box5" class="box col p-3 border border-info"></div>
+                    <div id="box6" class="box col p-3 border border-info"></div>
+                 </div>
+
+            <div class="row fs-1 g-0">
+                <div id="box7" class="box col p-3 border border-info"></div>
+                <div id="box8" class="box col p-3 border border-info"></div>
+                <div id="box9" class="box col p-3 border border-info"></div>
+                 </div>
+        </div>
+
+    </p>
+<!-- 
+    BUttons -->
+    <div class="d-grid col-3 mx-auto pt-4 gap-3">
+    <button id="playBtn" type="button" class="btn btn-outline-info btn-lg">PLAY</button>
+    <button id="resetBtn" type="button" class="btn btn-outline-info btn-lg">RESET</button>    
+
+
+<!-- 
+    Bootstrap links -->
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src = "index.js"></script>
+
+
+    </div>
+</body>
+</html>
